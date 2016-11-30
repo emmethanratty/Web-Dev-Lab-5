@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Worksheet 3 - Part 1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator</title>
+</head>
+<body>
+  <div id="calculator">
+    <input id = "display" type="text" disabled placeholder="0" id = "input">
+    <div class="flex-container">
+      <button class="flex-item">(</button>
+      <button class="flex-item">)</button>
+      <button class="flex-item">±</button>
+      <button class="flex-item">÷</button>
+      <button class="flex-item">7</button>
+      <button class="flex-item">8</button>
+      <button class="flex-item">9</button>
+      <button class="flex-item">x</button>
+      <button class="flex-item">4</button>
+      <button class="flex-item">5</button>
+      <button class="flex-item">6</button>
+      <button class="flex-item">-</button>
+      <button class="flex-item">1</button>
+      <button class="flex-item">2</button>
+      <button class="flex-item">3</button>
+      <button class="flex-item">+</button>
+      <button class="flex-item">0</button>
+      <button class="flex-item">.</button>
+      <button class="flex-item">C</button>
+      <button class="flex-item">=</button>
+    </div>
+  </div>
+</body>
+</html>
+
+<script src="bundle.js"></script>
+
+<style>
+
+input[type=text] {
+  font-size: 2em;
+  text-align: right;
+  border-radius: 5px;
+  width: 240px;
+  height: 35px;
+  margin-bottom: 10px;
+  padding: 1%;
+}
+button {
+  font-size: 1.1em;
+  border-radius: 5px;
+  width: 50px;
+}
+.flex-container {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.flex-item {
+  text-align: center;
+  padding: .5em;;
+  font-size: 1em;
+  flex-grow: 1;
+  margin: 0 5px 5px 0;
+}
+#calculator {
+  width: 250px;
+  font-size: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Verdana;
+}
+
+</style>
